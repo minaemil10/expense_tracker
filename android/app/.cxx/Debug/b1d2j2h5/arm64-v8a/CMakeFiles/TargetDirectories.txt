@@ -1,0 +1,2 @@
+C:/Users/Mnw Emile/Desktop/Flutter projects/udemy-maximilion/sec 5.. interactivity and theming/expense_tracker/android/app/.cxx/Debug/b1d2j2h5/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Mnw Emile/Desktop/Flutter projects/udemy-maximilion/sec 5.. interactivity and theming/expense_tracker/android/app/.cxx/Debug/b1d2j2h5/arm64-v8a/CMakeFiles/rebuild_cache.dir
