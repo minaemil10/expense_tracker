@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:expense_tracker/model/expense.dart';
 import 'package:flutter/material.dart';
 
@@ -45,7 +47,7 @@ class Chart extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         gradient: LinearGradient(
           colors: [
-            Theme.of(context).colorScheme.primary.withOpacity(0.3),
+            Theme.of(context).colorScheme.primary.withOpacity(0.1),
             Theme.of(context).colorScheme.primary.withOpacity(0.0)
           ],
           begin: Alignment.bottomCenter,
@@ -78,10 +80,7 @@ class Chart extends StatelessWidget {
                         categoryIconChooser[bucket.category],
                         color: isDarkMode
                             ? Theme.of(context).colorScheme.secondary
-                            : Theme.of(context)
-                                .colorScheme
-                                .primary
-                                .withOpacity(0.7),
+                            : Color.fromARGB(255, 148, 0, 211).withAlpha(220),
                       ),
                     ),
                   ),

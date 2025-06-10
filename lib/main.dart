@@ -13,54 +13,53 @@ void main() {
   // WidgetsFlutterBinding.ensureInitialized();
   // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
   //     .then((fn) {
-    runApp(
-      MaterialApp(
-        
-        darkTheme: ThemeData.dark().copyWith(
-          colorScheme: kDarkColorScheme,
-          cardTheme: CardTheme().copyWith(
-            color: kDarkColorScheme.secondaryContainer,
-            margin: EdgeInsets.symmetric(
-              horizontal: 16,
-              vertical: 8,
-            ),
-          ),
-          elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: kDarkColorScheme.primaryContainer,
-              foregroundColor: kDarkColorScheme.onPrimaryContainer,
-            ),
+  runApp(
+    MaterialApp(
+      darkTheme: ThemeData.dark().copyWith(
+        colorScheme: kDarkColorScheme,
+        cardTheme: CardThemeData().copyWith(
+          color: kDarkColorScheme.secondaryContainer,
+          margin: EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 8,
           ),
         ),
-        theme: ThemeData().copyWith(
-          colorScheme: kcolorScheme,
-          appBarTheme: AppBarTheme().copyWith(
-            backgroundColor: kcolorScheme.onPrimaryContainer,
-            foregroundColor: kcolorScheme.primaryContainer,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kDarkColorScheme.primaryContainer,
+            foregroundColor: kDarkColorScheme.onPrimaryContainer,
           ),
-          cardTheme: CardTheme().copyWith(
-            color: kcolorScheme.secondaryContainer,
-            margin: EdgeInsets.symmetric(
-              horizontal: 16,
-              vertical: 8,
-            ),
-          ),
-          elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: kcolorScheme.primaryContainer,
-            ),
-          ),
-          textTheme: ThemeData().textTheme.copyWith(
-                titleLarge: TextStyle().copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: kcolorScheme.onSecondaryContainer,
-                  fontSize: 16,
-                ),
-              ),
         ),
-        themeMode: ThemeMode.system,
-        home: Expenses(),
       ),
-    );
+      theme: ThemeData().copyWith(
+        colorScheme: kcolorScheme,
+        appBarTheme: AppBarTheme().copyWith(
+          backgroundColor: kcolorScheme.onPrimaryContainer,
+          foregroundColor: kcolorScheme.primaryContainer,
+        ),
+        cardTheme: CardThemeData().copyWith(
+          color: kcolorScheme.secondaryContainer,
+          margin: EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 8,
+          ),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kcolorScheme.primaryContainer,
+          ),
+        ),
+        textTheme: ThemeData().textTheme.copyWith(
+              titleLarge: TextStyle().copyWith(
+                fontWeight: FontWeight.bold,
+                color: kcolorScheme.onSecondaryContainer,
+                fontSize: 16,
+              ),
+            ),
+      ),
+      themeMode: ThemeMode.system,
+      home: Expenses(),
+    ),
+  );
   // });
 }
